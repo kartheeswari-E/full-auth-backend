@@ -1,9 +1,8 @@
 const bcrypt = require("bcrypt");
 const Joi = require("joi");
 const passwordComplexity = require("joi-password-complexity");
-const { User} = require("../db/connect");
+const { User} = require("../models/data.model");
 const router = require("express").Router();
-
 
 router.post("/", async (req, res) => {
 	try {
